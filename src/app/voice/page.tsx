@@ -7,6 +7,8 @@ import { hasProAccess } from "@/lib/auth-utils";
 
 async function VoicePage() {
   const hasAccess = await hasProAccess();
+  
+  console.log("Voice Page - Has Pro Access:", hasAccess);
 
   if (!hasAccess) return <ProPlanRequired />;
 

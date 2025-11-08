@@ -15,6 +15,12 @@ export async function hasProAccess(): Promise<boolean> {
   const userEmail = user?.emailAddresses?.[0]?.emailAddress;
   const adminEmail = process.env.ADMIN_EMAIL;
   const isAdmin = adminEmail && userEmail === adminEmail;
+  
+  console.log("Auth Utils - Email:", userEmail);
+  console.log("Auth Utils - Admin Email:", adminEmail);
+  console.log("Auth Utils - Is Admin:", isAdmin);
+  console.log("Auth Utils - Has ai_basic:", has({ plan: "ai_basic" }));
+  console.log("Auth Utils - Has ai_pro:", has({ plan: "ai_pro" }));
 
   // Return true if user has a plan or is admin
   return !!(has({ plan: "ai_basic" }) || has({ plan: "ai_pro" }) || isAdmin);
