@@ -11,8 +11,6 @@
   <img src="https://img.shields.io/badge/Prisma-6.16.2-2D3748?style=for-the-badge&logo=prisma" alt="Prisma" />
 </p>
 
-![Demo App](/public/screenshot-for-readme.png)
-
 ---
 
 ## ✨ Features
