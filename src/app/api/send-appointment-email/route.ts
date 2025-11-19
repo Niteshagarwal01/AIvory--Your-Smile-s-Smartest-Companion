@@ -23,7 +23,7 @@ export async function POST(request: Request) {
 
     // send the email
     const { data, error } = await resend.emails.send({
-      from: "AIvory <no-reply@resend.dev>",
+      from: "AIvory <no-reply@miraistudio.xyz>",
       to: userEmail,
       subject: "Appointment Confirmation - AIvory",
       react: AppointmentConfirmationEmail({
