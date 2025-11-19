@@ -12,6 +12,7 @@ async function main() {
   // Create sample doctors
   const doctors = [
     {
+      id: "doc1",
       name: "Dr. Sarah Johnson",
       email: "sarah.johnson@aivory.com",
       phone: "+1 (555) 123-4567",
@@ -20,6 +21,7 @@ async function main() {
       bio: "With over 15 years of experience, Dr. Johnson specializes in preventive care and cosmetic dentistry, helping patients achieve their best smile.",
     },
     {
+      id: "doc2",
       name: "Dr. Michael Chen",
       email: "michael.chen@aivory.com",
       phone: "+1 (555) 234-5678",
@@ -28,6 +30,7 @@ async function main() {
       bio: "Dr. Chen is an expert in orthodontics and teeth alignment, using the latest technology to create beautiful, healthy smiles.",
     },
     {
+      id: "doc3",
       name: "Dr. Emily Rodriguez",
       email: "emily.rodriguez@aivory.com",
       phone: "+1 (555) 345-6789",
@@ -36,6 +39,7 @@ async function main() {
       bio: "Specializing in children's dental care, Dr. Rodriguez creates a comfortable and fun environment for young patients.",
     },
     {
+      id: "doc4",
       name: "Dr. James Wilson",
       email: "james.wilson@aivory.com",
       phone: "+1 (555) 456-7890",
@@ -44,6 +48,7 @@ async function main() {
       bio: "Dr. Wilson is passionate about cosmetic dentistry, offering services like teeth whitening, veneers, and smile makeovers.",
     },
     {
+      id: "doc5",
       name: "Dr. Lisa Patel",
       email: "lisa.patel@aivory.com",
       phone: "+1 (555) 567-8901",
@@ -52,6 +57,7 @@ async function main() {
       bio: "As an endodontic specialist, Dr. Patel focuses on root canal treatments and saving natural teeth with advanced techniques.",
     },
     {
+      id: "doc6",
       name: "Dr. David Martinez",
       email: "david.martinez@aivory.com",
       phone: "+1 (555) 678-9012",

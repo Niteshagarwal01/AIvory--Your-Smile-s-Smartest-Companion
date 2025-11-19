@@ -195,7 +195,7 @@ export async function updateAppointmentStatus(input: { id: string; status: strin
   try {
     const appointment = await prisma.appointment.update({
       where: { id: input.id },
-      data: { status: input.status },
+      data: { status: input.status as any }, // Cast to enum, or use AppointmentStatus if imported
     });
 
     return appointment;

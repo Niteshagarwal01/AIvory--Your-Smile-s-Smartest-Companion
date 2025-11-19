@@ -35,7 +35,10 @@ function EditDoctorDialog({ doctor, isOpen, onClose }: EditDoctorDialogProps) {
 
   const handleSave = () => {
     if (editingDoctor) {
-      updateDoctorMutation.mutate({ ...editingDoctor }, { onSuccess: handleClose });
+      updateDoctorMutation.mutate({
+        ...editingDoctor,
+        email: editingDoctor.email ?? undefined,
+      }, { onSuccess: handleClose });
     }
   };
 
@@ -80,7 +83,7 @@ function EditDoctorDialog({ doctor, isOpen, onClose }: EditDoctorDialogProps) {
               <Input
                 id="email"
                 type="email"
-                value={editingDoctor.email}
+                value={editingDoctor.email ?? ""}
                 onChange={(e) => setEditingDoctor({ ...editingDoctor, email: e.target.value })}
               />
             </div>
