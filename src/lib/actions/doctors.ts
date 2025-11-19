@@ -39,6 +39,7 @@ export async function createDoctor(input: CreateDoctorInput) {
 
     const doctor = await prisma.doctor.create({
       data: {
+        id: crypto.randomUUID(),
         ...input,
         imageUrl: generateAvatar(input.name, input.gender),
       },
