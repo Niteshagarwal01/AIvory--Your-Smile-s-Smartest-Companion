@@ -11,6 +11,29 @@
   <img src="https://img.shields.io/badge/Prisma-6.16.2-2D3748?style=for-the-badge&logo=prisma" alt="Prisma" />
 </p>
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="home.png" alt="Home Screen" width="400">
+      <br /><em>Home Screen</em>
+    </td>
+    <td align="center">
+      <img src="appointment.png" alt="Chat Feature" width="400">
+      <br /><em>Appointment Booking</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="admin.png" alt="Admin Dashboard" width="400">
+      <br /><em>Admin Dashboard</em>
+    </td>
+    <td align="center">
+      <img src="voice.png" alt="Album Page" width="400">
+      <br /><em>Voice Panel</em>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ## ✨ Features
